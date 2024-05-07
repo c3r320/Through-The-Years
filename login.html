@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Through the Years</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">        
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+      <script src="https://kit.fontawesome.com/871b4377f3.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+  </header>
+
+<body>
+  <div class="wrapper">
+      <div class="form-box login">
+          <h2>Login</h2>
+          <form action="homepage.html">
+              <div class="input-box">
+                  <input type="name" required>
+                  <label>Username:</label>
+              </div>
+              <div class="input-box">
+                  <input type="password" required>
+                  <label>Password:</label>
+              </div>
+              <div class="remember-forgot"> 
+                  <label><input type="checkbox">Remember me</label>
+                  <a href="#">Forgot Password?</a>
+              </div>
+                 <button type="submit" class="btn">Login</button> 
+
+                 <div class="login-signup">
+                      <p>No Account? <a href="#" class="signup-link">Sign Up!</a></p>
+                 </div>
+          </form>
+      </div>
+
+
+
+      <div class="form-box signup">
+          <h2>Signup!</h2>
+          <form action="homepage.html">
+              <div class="input-box">
+                  <input type="gmail" required>
+                  <label>Gmail:</label>
+              </div>
+              <div class="input-box">
+                  <input type="text" required>
+                  <label>Username:</label>
+              </div>
+              <div class="input-box">
+                  <input type="password" required>
+                  <label>Password:</label>
+              </div>
+              <div class="remember-forgot"> 
+                  <label><input type="checkbox">I agree to the rules and conditions</label>
+              </div>
+                 <button type="submit" class="btn">Signup</button> 
+
+                 <div class="login-signup">
+                      <p>Have an existing account? <a href="#" class="login-link">Login</a></p>
+                 </div>
+          </form>
+      </div>
+  </div>
+  </body>
+
+  <script>
+  const wrapper = document.querySelector('.wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const signupLink = document.querySelector('.signup-link');
+    const btnPopup = document.querySelector('.btn-Login-popup');
+    const closeIcon = document.querySelector('.material-symbols-outlined');
+
+
+    signupLink.addEventListener('click', ()=> {
+        wrapper.classList.add('active');
+    });
+
+    loginLink.addEventListener('click', ()=> {
+        wrapper.classList.remove('active');
+    });
+
+    btnPopup.addEventListener('click', ()=> {
+        wrapper.classList.add('active-popup');
+    });
+
+    closeIcon.addEventListener('click', ()=> {
+        wrapper.classList.remove('active-popup');
+    });
+</script>
+</html>

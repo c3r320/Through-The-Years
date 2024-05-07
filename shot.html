@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Capture</title>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<h1>Screen Capture</h1>
+
+<!-- Button to trigger the screenshot -->
+<button id="captureButton">Capture Screen</button>
+
+<!-- Element to be captured -->
+<div id="captureElement" style="border: 2px solid red; padding: 10px;">
+    This is the part of the screen to be captured.
+</div>
+
+<script>
+document.getElementById('captureButton').addEventListener('click', function() {
+    // Capture the specific element using html2canvas
+    html2canvas(document.getElementById('captureElement')).then(function(canvas) {
+        // Convert the canvas content to a data URL
+        var dataURL = canvas.toDataURL('image/png');
+
+        // Create a temporary link element
+        var link = document.createElement('a');
+        link.href = dataURL;
+        link.download = 'throughtheyears.png';
+
+        // Simulate a click on the link to trigger the download
+        link.click();
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+body {
+    padding: 0;
+    text-align: center;
+    background-color: #D6DBD2;
+}
+header {
+    background-color: #BBC7A4;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer {
+    padding: 10px;
+    text-align: right;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #BBC7A4;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    float:left;
+    margin-left: 10px;
+}
+.nav li {
+    margin-right: 50px;
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.nav a:hover{
+    color: gray;
+}
+
+.login i {
+    display: inline;
+    position: fixed;
+    right: 2%;
+    top: 4%;
+  }
+  
+
+.logo img{
+    position: fixed;
+    top:2%;
+    left:7%;
+}
+
+.botnav{
+    max-width: fit-content;
+}
+.botnav {
+    top:1cm;
+    overflow: none;
+    background-color: #BBC7A4;
+    margin: 0;  
+    padding: 0px;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+          
+    text-align: center;
+    color: white;
+          
+}
+
+.botnav a {
+    float: left;
+    display: block;
+    color: Black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          
+}
+
+.botnav a:hover {
+    color: gray;
+    border-radius: 15%;
+}
+
+
+
+.fa {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 50px;
+    text-align: right;
+    text-decoration: none;
+    margin: 5px 2px;
+    font-size: larger;
+           
+    color: black;
+           
+}
+.fa:hover{
+    color: grey;
+}
+  
+  div {
+    font-family: myFirstFont;
+  }
+  .side-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -250px; 
+    width: 250px;
+    background-color: #BBC7A4;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    border-right: 12px #333;
+    z-index: 1;
+}
+
+.show.side-collapse {
+    left: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+.table a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.table td, .table th{
+    background-color: #BBC7A4;
+    border: none;
+}
+.table tr{
+    text-align:left;
+}
+.table th{
+    padding:20px;
+    display:inline-block;
+}
+.table td{
+    margin-right:20px;
+}
+.table-container {
+    margin-top: 20px;
+}
+table.table {
+    border-collapse: collapse;
+}
+th .btn {
+    margin-left: 120px;
+    padding:0;
+}
+.background-1 {
+    height: 300px;
+    background-image: url('image/toddler_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background-2 {
+    height: 300px;
+    background-image: url('image/infancy_3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.background-3 {
+    height: 300px;
+    background-image: url('image/preschool_12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.background-4 {
+    height: 300px;
+    background-image: url('image/elementary_8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.background-5 {
+    height: 300px;
+    background-image: url('image/highschool_19.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.background-6 {
+    height: 300px;
+    background-image: url('image/college_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.background-7 {
+    height: 200px;
+    background-image: url('image/elementary_5.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 55px;
+}
+.background-8 {
+    height: 600px;
+    background-image: url('image/Through the Years.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+.box {
+    background-color: #BBC7A4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 4px;
+    opacity: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    position:sticky;
+}
+.box:hover {
+    transform: scale(1.1);
+}
+
+p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-link {
+    flex: 1; 
+    margin-right: 10px;
+}
+
+.image-link:last-child {
+    margin-right: 0;
+}
+
+.image-link img {
+    width: 300px;
+    height: auto;
+}
+.top-section a{
+    text-decoration: none;
+    color:#333;
+}
+.reviews-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3%;
+  }
+  
+  .reviews {
+    display: flex;
+    transition: left 0.4s ease;
+  }
+  
+  .review {
+    width: 200px;
+    height:100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .show-all {
+    display: none;
+  }
+  .background-8 .btn {
+    background-color: #668C54;
+    border: none;
+    color: white;
+    padding-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    width:300px;
+    margin-right: 250px;
+    margin-bottom: 13%;
+}
+
+.search-box {
+    width:250px;
+    max-height: 32px;
+    background:white;
+    border-radius: 15px;
+    margin-right:40px;
+    padding:0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    vertical-align: text-top;
+}
+input{
+    flex: 1;
+    height: 20px;
+    border:0;
+    outline:0;
+    font-size:small;
+    color: #333;
+    padding-bottom:10px;
+}
+.search-box button{
+    width:15px;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline:0;
+    padding: 0;
+}
+::placeholder{
+    color: #555;
+}
+.result-box ul{
+    border-top:1px solid #999;
+    padding:8px 8px;
+}
+.result-box ul li{
+    list-style:none;
+    border-radius: 3px;
+    padding:8px 8px;
+    font-size: small;
+    height:30px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background:#ccc;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding:8px 20px;
+}
+.result-box{
+    background:white;
+    border-radius: 15px;
+    border-color: #555;
+}
+.container img{             
+    max-width:100%;
+    height: 100%;
+    position: relative;
+    border-radius: 1%;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.col-3{
+    margin-bottom: 10px;
+}
+.img-fluid {
+    position: relative;
+    z-index: 0;
+}
